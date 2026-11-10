@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Edukasi — Mengenali URL Palsu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="edu-banner" role="note">
+    <span class="edu-icon" aria-hidden="true">⚠️</span>
+    <div><strong>SIMULASI EDUKASI</strong> — Ini bukan browser atau situs sungguhan. Tidak ada data yang diminta atau dikirim.</div>
+  </header>
+
+  <main>
+    <section class="demo-card" aria-labelledby="title">
+      <p class="eyebrow">KEBIASAAN AMAN SAAT ONLINE</p>
+      <h1 id="title">Jangan percaya pada URL yang hanya terlihat di halaman</h1>
+      <p class="intro">Sebuah halaman web dapat menggambar teks atau tampilan apa pun. Tampilan di bawah ini hanyalah ilustrasi HTML—bukan address bar browser.</p>
+
+      <div class="illustration" aria-label="Ilustrasi URL yang diklaim oleh halaman, bukan address bar browser">
+        <div class="illustration-label"><span class="dot" aria-hidden="true"></span> ILUSTRASI DI DALAM HALAMAN</div>
+        <div class="fake-address" aria-hidden="true">
+          <span>ⓘ</span>
+          <code id="exampleUrl">https://bank.example.test/login</code>
+        </div>
+        <p class="caption">Teks ini bisa dibuat oleh halaman web dan tidak membuktikan situs yang sedang Anda kunjungi.</p>
+      </div>
+
+      <div class="lesson">
+        <h2>Cara memeriksa alamat sebenarnya</h2>
+        <ol>
+          <li>Lihat address bar milik browser di bagian atas jendela atau layar—bukan elemen yang digambar di halaman.</li>
+          <li>Periksa nama domain dengan teliti, termasuk ejaan dan subdomain.</li>
+          <li>Jika ragu, buka situs melalui bookmark atau ketik alamat yang sudah Anda ketahui.</li>
+        </ol>
+      </div>
+
+      <button id="nextExample" type="button">Tampilkan contoh ilustrasi lain</button>
+      <p id="status" class="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>Contoh menggunakan domain <code>example.test</code> yang dicadangkan untuk dokumentasi. Demo ini tidak menavigasi ke situs lain.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
